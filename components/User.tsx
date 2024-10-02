@@ -1,5 +1,7 @@
 // import React from 'react';
 
+
+
 // const User = (props : {name: string, age: number, isStudent :boolean}) => {
 //     return (
 //         <div>
@@ -30,18 +32,32 @@
 
 // export default User;
 
-interface UserShape {
-    name: string,
-    age: number,
-    isStudent: boolean
-}
+// interface UserShape {
+//     name: string,
+//     age: number,
+//     isStudent: boolean
+// }
 
-const User = ({ name, age, isStudent }: UserShape) => {
+// const User = ({ name, age, isStudent }: UserShape) => {
+//     return (
+//         <div>
+//             <h1>{name}</h1>
+//             <h1>{age}</h1>
+//             <h1>{isStudent}</h1>
+//         </div>
+//     );
+// };
+
+// export default User;
+
+import { ReactNode } from "react";
+
+type UserShape = {children : ReactNode}
+
+const User = ({children}: UserShape) => {
     return (
         <div>
-            <h1>{name}</h1>
-            <h1>{age}</h1>
-            <h1>{isStudent}</h1>
+            {children}
         </div>
     );
 };
