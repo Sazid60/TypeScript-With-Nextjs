@@ -8,6 +8,18 @@
 //     </section>
 //   );
 // }
+// import User from "@/components/User";
+
+
+// export default function Home() {
+//   return (
+//     <section>
+//       <User>
+//         <p>hi i am sazid</p>
+//       </User>
+//     </section>
+//   );
+// }
 import User from "@/components/User";
 
 
