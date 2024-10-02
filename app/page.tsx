@@ -26,6 +26,7 @@
 
 import AdminInfo from "@/components/AdminInfo";
 import Counter from "@/components/Counter";
+import Form from "@/components/Form";
 import UserInfo from "@/components/UserInfo";
 
 export default function Home() {
@@ -34,6 +35,7 @@ export default function Home() {
       <UserInfo username="sazid" email="s@gmail.com" age={20} location={['Earth', 'Usa']} />
       <AdminInfo username="sazid" email="s@gmail.com" age={20} location={['Mars', 'Usa']} admin="yes" />
       <Counter/>
+      <Form/>
       </section>
   );
 }
