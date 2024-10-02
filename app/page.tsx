@@ -29,7 +29,9 @@ import AdminInfo from "@/components/AdminInfo";
 import Counter from "@/components/Counter";
 import ElementWrapper from "@/components/ElementWrapper";
 import Form from "@/components/Form";
+import MyComponent from "@/components/MyComponent";
 import UserInfo from "@/components/UserInfo";
+import { MyContextProvider } from "@/context/MyContext";
 
 export default function Home() {
   return (
@@ -38,9 +40,12 @@ export default function Home() {
       <AdminInfo username="sazid" email="s@gmail.com" age={20} location={['Mars', 'Usa']} admin="yes" />
       <Counter />
       <Form />
-      <ElementWrapper elementType="div" className="box" onClick={()=>alert("Div Clicked")}>
+      <ElementWrapper elementType="div" className="box" onClick={() => alert("Div Clicked")}>
         <p>Hibijibi Hibi Jibi </p>
       </ElementWrapper>
+      <MyContextProvider>
+        <MyComponent></MyComponent>
+      </MyContextProvider>
     </section>
   );
 }
